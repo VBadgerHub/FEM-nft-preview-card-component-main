@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  background-color: #0d192b;
+  color: #8bacda;
+}
+
+#contener {
+  height: 95vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#card {
+  width: 320px;
+  min-height: 580px;
+  background-color: #14253d;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+#upper_card {
+  position: relative;
+  height: 320px;
+  background-image: url("./images/image-equilibrium.jpg");
+  background-size: cover;
+  border-radius: 8px;
+}
+
+#card_hover {
+  height: 320px;
+  width: 100%;
+  background-repeat: no-repeat;
+  color: #00fff7;
+  z-index: 20;
+  background-color: rgba(0, 255, 247, 0.61);
+  opacity: 0;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#card_hover:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+#lower_card {
+  padding-top: 20px;
+  height: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nft_tag {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.nft_tag:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.nft_text {
+  line-height: 26px;
+}
+
+#nft_data {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px #2f415b solid;
+}
+
+.nft_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 31%;
+  margin-bottom: 20px;
+}
+
+.nft_price {
+  color: #00fff7;
+}
+
+.avatar {
+  background-image: url("./images/image-avatar.png");
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+  border: 1px #ddd solid;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#nft_footer {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.name {
+  margin-left: 5px;
+  color: white;
+}
+
+.name:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

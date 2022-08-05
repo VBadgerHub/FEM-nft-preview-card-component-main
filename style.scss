@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+$soft_blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+$cyan_hover: hsla(178, 100%, 50%, 0.61);
+$very_dark_blue_bg: hsl(217, 54%, 11%); //(main BG)
+$very_dark_blue_cbg: hsl(216, 50%, 16%); // (card BG)
+$very_dark_blue_line: hsl(215, 32%, 27%); // (line)
+$white: hsl(0, 0%, 100%);
+
+
+
+body{
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    background-color: $very_dark_blue_bg;
+    color: $soft_blue;
+    
+}
+
+#contener{
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card{
+    width: 320px;
+    min-height: 580px;
+    background-color: $very_dark_blue_cbg;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+#upper_card{
+    position: relative;
+    height: 320px;
+    background-image: url('./images/image-equilibrium.jpg');
+    background-size: cover;
+    border-radius: 8px;
+}
+
+#card_hover{
+    height: 320px;
+    width: 100%;
+    background-repeat: no-repeat;
+    color: $cyan;
+    z-index: 20;
+    background-color: $cyan_hover;
+    opacity: 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover{
+        opacity: 1;
+        cursor: pointer;
+    }
+}
+
+#lower_card{
+    padding-top: 20px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nft_tag{
+    color: $white;
+    font-size: 22px;
+    font-weight: 700;
+
+    &:hover{
+        color: $cyan;
+        cursor: pointer;
+    }
+}
+
+.nft_text{
+    line-height: 26px;
+}
+
+#nft_data{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px $very_dark_blue_line solid;
+}
+
+.nft_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 31%;
+    margin-bottom: 20px;
+}
+
+.nft_price{
+    color: $cyan;
+}
+
+.avatar{
+    background-image: url('./images/image-avatar.png');
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    border: 1px #ddd solid;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#nft_footer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.name{
+    
+    margin-left: 5px;
+    color: $white;
+
+    &:hover{
+        color: $cyan;
+        cursor: pointer;
+    }
+}
