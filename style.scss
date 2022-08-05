@@ -94,13 +94,17 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 31%;
     margin-bottom: 20px;
+
+    img{
+        margin: 5px;
+    }
 }
 
 .nft_price{
     color: $cyan;
 }
+
 
 .avatar{
     background-image: url('./images/image-avatar.png');
